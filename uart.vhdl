@@ -13,19 +13,29 @@ entity uart is
 end entity;
 
 architecture uart_uwu of uart is
-  signal uart_clk : std_logic; -- we want 115 201 BAUD
+  signal uart_clk : std_logic; -- we want 115 200 BAUD
 begin
 
-  process (CLK_12MHz)
-    variable uart_ctr : unsigned (7 downto 0); -- counts to 104
+  uart_clocker: process (CLK_12MHz)
+    -- Want to downclock 12MHz to 115.200KHz
+    -- Scalar of 104 + 1/6
+    -- uart_ctr will count to 103
+    -- extra_ctr counts to 6, then does an extra step for uart_ctr
+    variable uart_ctr : integer range 0 to 104;
+    variable extra_ctr : integer range 0 to 5;
   begin
     if rising_edge (CLK_12MHz) then
-      if uart_ctr = 104 then
-        uart_ctr := "00000000";
+      if uart_ctr = 103 and extra_ctr /= 5 then
         uart_clk <= '1';
+        uart_ctr := 0;
+        extra_ctr := extra_ctr + 1;
+      elsif uart_ctr = 104 and extra_ctr = 5 then
+        uart_clk <= '1';
+        uart_ctr := 0;
+        extra_ctr := 0;
       else
-        uart_ctr := uart_ctr + 1;
         uart_clk <= '0';
+        uart_ctr := uart_ctr + 1;
       end if;
     end if;
   end process;
