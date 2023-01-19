@@ -4,6 +4,8 @@ in pkgs.mkShell {
   buildInputs = with pkgs; [
     usbutils icestorm
     yosys yosys-ghdl arachne-pnr nextpnrWithGui
+    xdot # for yosys show
+    ghdl
     minicom
   ];
 }
