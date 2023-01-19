@@ -1,0 +1,121 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+d/home/coral/EDA
+Puart_common
+!i122 10
+w1674168747
+Z0 d/home/coral/icestorm-testing/meowsim
+8/home/coral/icestorm-testing/uart_common.vhdl
+F/home/coral/icestorm-testing/uart_common.vhdl
+l0
+L1 1
+V5zhQL3zz=J1Ua0?l9G?[n3
+!s100 3[z=NW8[_fOZBgaZgJ65S0
+Z1 OV;C;2020.1;71
+32
+!s110 1674170503
+!i10b 1
+Z2 !s108 1674170503.000000
+!s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/coral/icestorm-testing/uart_common.vhdl|
+!s107 /home/coral/icestorm-testing/uart_common.vhdl|
+!i113 1
+Z3 o-work work -2002 -explicit
+Z4 tExplicit 1 CvgOpt 0
+Euart_sender
+Z5 w1674170409
+Z6 DPx4 work 11 uart_common 0 22 5zhQL3zz=J1Ua0?l9G?[n3
+Z7 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z8 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z9 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 11
+R0
+Z10 8/home/coral/icestorm-testing/uart_sender.vhdl
+Z11 F/home/coral/icestorm-testing/uart_sender.vhdl
+l0
+L7 1
+VEihUjGo`^8g0]R@LbPef<0
+!s100 4^QVTa=S[W_>n^;DeGE5_1
+R1
+32
+Z12 !s110 1674170504
+!i10b 1
+R2
+Z13 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/coral/icestorm-testing/uart_sender.vhdl|
+Z14 !s107 /home/coral/icestorm-testing/uart_sender.vhdl|
+!i113 1
+R3
+R4
+Auart_uwu
+R6
+R7
+R8
+R9
+DEx4 work 11 uart_sender 0 22 EihUjGo`^8g0]R@LbPef<0
+!i122 11
+l24
+L21 84
+V=aY1UGa`5hoV=0;Qi4C=B2
+!s100 3da9S9oN@OGUQ`AM_Z6A>1
+R1
+32
+R12
+!i10b 1
+R2
+R13
+R14
+!i113 1
+R3
+R4
+Euart_user
+Z15 w1674168985
+R6
+R7
+R8
+R9
+!i122 12
+R0
+Z16 8/home/coral/icestorm-testing/uart_user.vhdl
+Z17 F/home/coral/icestorm-testing/uart_user.vhdl
+l0
+L6 1
+VQa_n1YTkJ:mec1cSZlWMF3
+!s100 1Oh5XacS1h0g=O>]5[`FO1
+R1
+32
+R12
+!i10b 1
+Z18 !s108 1674170504.000000
+Z19 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/coral/icestorm-testing/uart_user.vhdl|
+Z20 !s107 /home/coral/icestorm-testing/uart_user.vhdl|
+!i113 1
+R3
+R4
+Asend_sample
+R6
+R7
+R8
+R9
+Z21 DEx4 work 9 uart_user 0 22 Qa_n1YTkJ:mec1cSZlWMF3
+!i122 12
+l38
+Z22 L17 98
+Z23 VG05C1dOiRZYYgdm3b?VG[1
+Z24 !s100 J=3[:kIoNbLZ<]CJi8KlP3
+R1
+32
+R12
+!i10b 1
+R18
+R19
+R20
+!i113 1
+R3
+R4
